@@ -1,0 +1,76 @@
+.application {
+    width: 635px;
+    height: 818px;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 5px 10px 18px rgb(0, 153, 255);
+}
+
+.error-text {
+    color: red;
+    font-style: italic;
+    display: block;
+}
+
+.forms {
+    margin: 90px 90px 0 100px;
+}
+
+.usernametext {
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+#Username {
+    margin-left: 40px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 5px;
+    
+}
+
+#passw {
+    margin-left: 45px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 5px;
+    
+}
+
+#passw2 {
+    margin-left: 30px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 5px;
+   
+}
+
+.app {
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.h2 {
+    font-size: 25px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.radioclass {
+    margin-top: 40px;
+}
+
+.checkboxclass {
+    margin-top: 20px;
+}
+
+.allradio {
+    margin-top: 20px;
+    margin-left: -5px;
+}
