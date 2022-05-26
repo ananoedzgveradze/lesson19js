@@ -1,6 +1,6 @@
 .application {
     width: 635px;
-    height: 818px;
+    height: 100%;
     background-color: aqua;
     margin: 0 auto;
     margin-top: 70px;
@@ -17,7 +17,7 @@
 }
 
 .forms {
-    margin: 90px 90px 0 100px;
+    margin: 40px 90px 0 100px;
 }
 
 .usernametext {
@@ -26,12 +26,42 @@
     
 }
 
+.usernametext2 {
+    display: flex;
+    margin-top: 15px;
+    
+}
+
+
+
+#firstname {
+    margin-left: 93px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 5px;
+    
+}
+
+#surname {
+    margin-left: 50px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 5px;
+}
+
 #Username {
     margin-left: 40px;
     border: 2px solid transparent;
     border-radius: 12px;
     padding: 5px;
     
+}
+
+#myemail {
+    margin-left: 40px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 5px;
 }
 
 #passw {
@@ -73,4 +103,49 @@
 .allradio {
     margin-top: 20px;
     margin-left: -5px;
+}
+
+.h3 {
+    margin-left: 220px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.h2tag {
+    margin-left: 80px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+}
+.h2tag1 {
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#toggleIcon {
+    margin-top: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#toggleIcon2 {
+    margin-top: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+#emailtext {
+    display: block;
+}
+
+.clickbutton {
+    margin-top: 10px;
+}
+
+.buttonclass {
+    margin-top: 20px;
 }
