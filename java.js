@@ -7,12 +7,22 @@ document.getElementById ('registration').addEventListener('submit', function (ev
 //via name
 // let username = document.querySelector ('[name = "username"]').value;
 
-    let username =document.getElementById('Username').value;
 
+let firstName =document.getElementById('firstname').value;
+    if (firstName.length < 4 || firstname == '' ) {
+        errors.firstname = 'Name can not be empty and must be more than 4 symbols'
+    }
+
+let surName =document.getElementById('surname').value;
+    if (surName.length < 6 || surname == '' ) {
+        errors.surname = 'Surname can not be empty and must be more than 6 symbols'
+    }
+
+
+let username =document.getElementById('Username').value;
     if (username.length < 4 || username == '' ) {
         errors.username = 'Username can not be empty and must be more than 4 symbols'
     }
-
 
 //Password
 
@@ -64,5 +74,78 @@ for (let item in errors) {
     }
 }
 
-});
+if (Object.keys(errors).length == 0) {
+    form.submit();
+    
+} 
 
+
+});
+//password hide/show
+
+let passwordShow = document.getElementById('passw')
+let toggleIconEye = document.getElementById('toggleIcon')
+
+showHidePassword = () => {
+    if (passwordShow.type == "password") {
+    passwordShow.setAttribute('type', 'text' );
+    toggleIconEye.classList.add('fa-eye-slash');
+
+}  else {
+    toggleIconEye.classList.remove('fa-eye-slash');
+    passwordShow.setAttribute('type', 'password' );
+
+   }
+
+}
+
+toggleIconEye.addEventListener('click', showHidePassword);
+
+
+let passwordShow2 = document.getElementById('passw2')
+let toggleIconEye2 = document.getElementById('toggleIcon2')
+
+showHidePassword2 = () => {
+    if (passwordShow2.type == "password") {
+    passwordShow2.setAttribute('type', 'text' );
+    toggleIconEye2.classList.add('fa-eye-slash');
+
+}  else {
+    toggleIconEye2.classList.remove('fa-eye-slash');
+    passwordShow2.setAttribute('type', 'password' );
+
+   }
+
+}
+
+toggleIconEye2.addEventListener('click', showHidePassword2);
+
+
+
+
+
+
+
+
+
+
+
+
+//email validation
+
+function validation() {
+    let emailField = document.getElementById('myemail').value;
+    let spanText = document.getElementById('emailtext');
+    let emailStructure =  /^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/
+
+    if (emailField.match(emailStructure)) {
+        spanText.innerHTML = 'You Email is valid';
+        spanText.style.color = 'green';
+    
+    
+    } else {
+        spanText.innerHTML = 'You Email is invalid';
+        spanText.style.color = 'red';
+    }
+        
+}
