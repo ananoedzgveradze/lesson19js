@@ -13,26 +13,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div  class="application">
         <h1 class="app">Application Form </h1>
-    <form class="forms" action="" method="" id="registration">
+        <h3 class="h3">Please Sign Up</h3>
+    <form class="forms" action="" method="post" id="registration">
+     <h2 class="h2tag">Enter Personal Information</h2>
+        <div class="usernametext">
+            <h2 class="h2">Enter Name:</h2>
+            <input type="text" name="firstname" placeholder='First Name' id="firstname">
+            <span class="error-text" id="error_firstname" ></span>
+        </div>
+
+
+        <div class="usernametext">
+            <h2 class="h2">Enter Surname:</h2>
+            <input type="text" name="surname" placeholder='Surname' id="surname">
+            <span class="error-text" id="error_surname" ></span>
+        </div>
+
+     <h2 class="h2tag1">Create Username and Password</h2>
         <div class="usernametext">
             <h2 class="h2">Enter Username:</h2>
             <input type="text" name="username" placeholder="Username" id="Username">
             <span class="error-text" id="error_username" ></span>
         </div>
 
+
         <div class="usernametext">
             <h2 class="h2">Enter Password:</h2>
             <input type="password" name="password" placeholder="Password" id="passw">
+            <i id="toggleIcon" class="fa-solid fa-eye"></i>
             <span class="error-text" id="error_password" ></span>
         </div>
 
         <div class="usernametext">
             <h2 class="h2">Repeat Password:</h2>
             <input type="password" name="password2" placeholder="Repeat Password" id="passw2">
+            <i id="toggleIcon2" class="fa-solid fa-eye"></i>
             <span class="error-text" id="error_password2" ></span>
         </div>
 
@@ -50,18 +78,36 @@
           </div>
         </div>
 
-        <div class="checkboxclass">
-            
-            <input type="checkbox" name="agree" id="checkagree">
-            <label for="checkagree">I agree terms and conditions</label>
-            <span class="error-text" id="error_agree" ></span>
-        </div>
 
-        <button type="submit">Send</button>
+  <!-- Email  regex -->
+  <div class="usernametext2">
+  <h3 class="h2">Enter Your Email</h3> 
+  <form action="" id="email-form">
+      <div>
+      <input type="email" placeholder="Email" id="myemail" onkeydown="validation()">
+           <span id="emailtext" ></span>
+     </div>
+    </div>
+
+
+    <div class="checkboxclass">
+            
+        <input type="checkbox" name="agree" id="checkagree">
+        <label for="checkagree">I agree terms and conditions</label>
+        <span class="error-text" id="error_agree" ></span>
+    </div>
+    
+
+     <button class="buttonclass" type="submit">Submit</button>
+
     </form>
+
+    </form>
+      
 </div>
 
 
-    <script src="java.js"></script>
+<script src="java.js"></script>
+
 </body>
 </html>
